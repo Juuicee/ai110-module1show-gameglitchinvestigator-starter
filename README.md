@@ -26,12 +26,14 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+   + The purpose of the game is to let the user guess a randomly generated secret number based on a selected difficulty level. The player enters guesses, receives hints about whether the guess is too high or too low
 - [ ] Detail which bugs you found.
+   + One major bug was that the hints were reversed — when a guess was too high, the game would say it was too low, and vice versa. Another issue was that the history of guesses was not displaying correctly, so players couldn’t clearly see their previous attempts.
 - [ ] Explain what fixes you applied.
-
+   + To fix the reversed hints, I corrected the comparison logic so that the messages matched the actual relationship between the guess and the secret number. I repaired the guess history by ensuring each guess was properly appended to session state and displayed in order.
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] ![Game Screenshot](FixedGame.png)
 
 ## 🚀 Stretch Features
 
